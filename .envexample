@@ -1,0 +1,3 @@
+EMAIL_USER = <your email>
+EMAIL_PASS = <email password>
+EMAIL_FROM = <your email>   # email id for this website

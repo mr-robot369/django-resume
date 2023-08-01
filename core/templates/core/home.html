@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %} 
+    <div class="mt-5">
+        <div class="text-center">
+            <img src="{% static 'core/images/pic1.jpg' %}" alt="ProfilePic"
+            class="img-thumbnail" width="250px" height="150px">
+        </div>
+        <div class="mt-5 text-white mx-5" style="text-align:justify">
+            <h1 class="font-weight-bold st-font" >Hello,</h1>
+        <div class="px-4" style="line-height:2rem">
+        <p style="text-indent:100px;"> Hello there! I'm  <b class="text-warning">Anubhav Shukla,</b> a highly motivated and enthusiastic student currently pursuing BSc in Mathematical Sciences at PGDAV College, University of Delhi. From an early stage in my academic journey, I discovered a deep passion for coding and software development. My fascination with technology led me to explore various programming languages, and I have honed my skills in HTML, CSS, JavaScript, and Python. As a dedicated full stack developer, I thrive on the challenges of creating intuitive and dynamic web applications. My curiosity and love for coding drive me to continuously seek opportunities to expand my knowledge and take on new projects.
+        <p>Throughout my academic career, I've actively engaged in web development projects that allowed me to apply my coding expertise in real-world scenarios. Working with Django and Django Rest Framework has been an incredible experience, as it has empowered me to build robust and scalable web applications. The ability to solve complex problems and turn ideas into reality has been immensely rewarding. During my journey as a programmer, I've embraced a collaborative and open-minded approach, fostering effective communication and teamwork with colleagues and clients alike. This has not only enhanced my technical skills but also taught me the importance of delivering value-driven solutions.</p>
+        
+        <p>As I progress in my academic and professional journey, my ultimate goal is to become a software engineer with a focus on developing innovative solutions that positively impact people's lives. I am determined to leverage my skills in coding, web development, and problem-solving to contribute to the ever-evolving tech industry. By staying updated with the latest trends and advancements, I aim to excel in this dynamic field and contribute my part in shaping the future of technology. I am eager to collaborate with like-minded individuals and organizations that share my vision of creating cutting-edge software applications and driving technological progress. Together, we can usher in a new era of digital innovation and make a difference in the lives of people worldwide.</p>
+    </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+    </div>
+{% endblock content %}
