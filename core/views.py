@@ -9,7 +9,7 @@ def home(request):
 
 def contact(request):
     form = ContactForm(request.POST or None)
-    print("hello")
+    # print("hello")
     if form.is_valid():
         print("hello34")
         # Extract data from the form
